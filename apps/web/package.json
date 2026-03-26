@@ -1,0 +1,29 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "next typegen && tsgo --noEmit",
+    "clean": "git clean -xdf .next .cache .turbo dist node_modules next-env.d.ts"
+  },
+  "dependencies": {
+    "@repo/next-config": "workspace:*",
+    "@t3-oss/env-nextjs": "catalog:",
+    "next": "catalog:",
+    "next-i18next": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@typescript/native-preview": "catalog:",
+    "typescript": "5.9.2"
+  }
+}

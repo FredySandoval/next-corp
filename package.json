@@ -1,0 +1,21 @@
+{
+  "name": "next-corp",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "typecheck": "turbo run typecheck",
+    "clean": " pnpm -r run clean && git clean -xdf node_modules .turbo",
+    "dedupe": "pnpm dedupe"
+  },
+  "devDependencies": {
+    "prettier": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "5.9.2"
+  },
+  "packageManager": "pnpm@10.31.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

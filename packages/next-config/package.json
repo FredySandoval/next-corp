@@ -1,0 +1,26 @@
+{
+  "name": "@repo/next-config",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .next .cache .turbo dist node_modules",
+    "typecheck": "tsgo --noEmit"
+  },
+  "exports": {
+    "./env-server": "./env-server.ts",
+    "./env-client": "./env-client.ts",
+    "./next-config": "./next-config.ts",
+    "./utils": "./utils.ts"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@typescript/native-preview": "catalog:",
+    "next": "catalog:"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "catalog:",
+    "@t3-oss/env-nextjs": "catalog:",
+    "@types/node": "catalog:",
+    "zod": "catalog:"
+  }
+}

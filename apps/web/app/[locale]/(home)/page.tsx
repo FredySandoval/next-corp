@@ -11,8 +11,5 @@ export const generateMetadata = async (): Promise<Metadata> => {
 };
 
 export default async function Home({ params }: HomeProps) {
-  return (
-    <>
-    </>
-  );
+  return <></>;
 }

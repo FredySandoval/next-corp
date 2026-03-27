@@ -1,12 +1,13 @@
 "use server";
 import type { Metadata } from "next";
 
-interface HomeProps {
-  params: {
+type HomeProps = {
+  params: Promise<{
     locale: string;
-  };
+  }>;
 }
-export const generateMetadata = async (): Promise<Metadata> => {
+
+export async function generateMetadata({ params }: HomeProps): Promise<Metadata> {
   return {};
 };
 

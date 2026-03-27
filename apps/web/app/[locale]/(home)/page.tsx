@@ -5,11 +5,13 @@ type HomeProps = {
   params: Promise<{
     locale: string;
   }>;
-}
-
-export async function generateMetadata({ params }: HomeProps): Promise<Metadata> {
-  return {};
 };
+
+export async function generateMetadata({
+  params,
+}: HomeProps): Promise<Metadata> {
+  return {};
+}
 
 export default async function Home({ params }: HomeProps) {
   return <></>;
